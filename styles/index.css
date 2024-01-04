@@ -1,0 +1,9 @@
+@import "./common.css";
+
+body {
+    color: white;
+}
+
+h1 {
+    font-size: 6rem;
+}

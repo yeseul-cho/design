@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #01001A;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+.yellow {
+    color: #E5DE2E;
+}
+
+.bold-korean-700 {
+    font-family: 'PyeongChangPeace';
+    font-weight: 700;
+}
+
+.bold-korean-300 {
+    font-family: 'PyeongChangPeace';
+    font-weight: 300;
+}
+
+.bold-english {
+    font-family: 'PartialSansKR-Regular';
+}
+
+/* navigation */
+.navigation {
+    border: 1px solid white;
+    display: flex;
+    width: 100%;
+}
+
+.navigation ul {
+    display: flex;
+    
+}
