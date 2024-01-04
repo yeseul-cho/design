@@ -4,13 +4,6 @@
     padding: 0;
 }
 
-body {
-    background-color: #01001A;
-    font-family:  'NanumSquareNeo';
-    font-weight: 300;
-    font-size: 16px;
-}
-
 a {
     color: white;
     text-decoration: none;
@@ -20,6 +13,27 @@ a:visited {
     color: white;
 }
 
+li {
+    list-style: none;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1280px;
+    background-color: rgba(1,0,26, 1);
+    font-family:  'NanumSquareNeo';
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* 폰트 설정 */
 .yellow {
     color: #E5DE2E;
 }
@@ -39,14 +53,34 @@ a:visited {
 }
 
 
-/* navigation */
+/* 네비게이션 설정 */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: rgba(1,0,26, 0.7);
+}
+
 .navigation {
-    border: 1px solid white;
     display: flex;
+    align-items: center;
     width: 100%;
+    height: 5rem;
+    font-size: 1.5rem;
 }
 
 .navigation ul {
     display: flex;
+    margin-left: auto;
+}
 
+.navigation ul li{
+    margin-left: 2.75rem;
+}
+
+.navigation ul li a:hover {
+    color: #E5DE2E;
+}
+
+.navigation svg {
+    
 }
