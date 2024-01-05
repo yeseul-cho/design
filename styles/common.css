@@ -30,7 +30,7 @@ body {
     background-color: rgba(1,0,26, 1);
     font-family:  'NanumSquareNeo';
     font-weight: 300;
-    font-size: 16px;
+    letter-spacing: -0.062rem;
 }
 
 /* 폰트 설정 */
@@ -41,15 +41,24 @@ body {
 .korean-emphasis-700 {
     font-family: 'PyeongChangPeace', sans-serif;
     font-weight: 700;
+    letter-spacing: 0;
 }
 
 .korean-emphasis-300 {
     font-family: 'PyeongChangPeace', sans-serif;
     font-weight: 300;
+    letter-spacing: 0;
 }
 
 .english {
     font-family: 'Jockey One', sans-serif;
+    letter-spacing: 0.15rem;
+}
+
+.caption {
+    font-size: 0.75rem;
+    letter-spacing: 0;
+    opacity: 0.5;
 }
 
 
@@ -58,6 +67,7 @@ nav {
     position: sticky;
     top: 0;
     background-color: rgba(1,0,26, 0.7);
+    z-index: 100;
 }
 
 .navigation {
@@ -79,8 +89,4 @@ nav {
 
 .navigation ul li a:hover {
     color: #E5DE2E;
-}
-
-.navigation svg {
-    
 }

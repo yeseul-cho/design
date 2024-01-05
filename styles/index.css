@@ -1,9 +1,82 @@
 @import "./common.css";
 
-body {
-    color: white;
+header {
+  position: relative;
+  color: white;
 }
 
-h1 {
-    font-size: 6rem;
+header .text-area {
+  margin: 24rem 0 0 10rem;
+  z-index: 1;
+}
+
+header .text-area .sub-title {
+  font-size: 2rem;
+}
+
+header .text-area .title {
+  display: flex;
+  align-items: center;
+}
+
+header .text-area .title h1 {
+  font-size: 6rem;
+  line-height: 1.125;
+  margin-right: 0.25rem;
+}
+
+header .text-area .description {
+  margin: 1.2rem 0;
+}
+
+header .text-area .description p {
+  line-height: 1.6;
+}
+
+header .illust-human {
+  position: absolute;
+  top: -5rem;
+  right: 0rem;
+  background-image: url("/images/index/astronaut.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 750px;
+  height: 750px;
+  z-index: 0;
+  animation-name: illust-human;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+}
+
+@keyframes illust-human {
+  50% {
+    top: -3rem;
+    right: 6rem;
+  }
+}
+
+header .illust-dog {
+  position: absolute;
+  top: 3rem;
+  left: 2rem;
+  background-image: url("/images/index/astronaut-dog.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  animation-name: illust-dog;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+}
+
+@keyframes illust-dog {
+  50% {
+    top: 5.5rem;
+    left: 4rem;
+    transform: rotate(5deg);
+  }
 }
