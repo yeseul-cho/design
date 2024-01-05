@@ -23,14 +23,17 @@ html {
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 1280px;
     background-color: rgba(1,0,26, 1);
     font-family:  'NanumSquareNeo';
     font-weight: 300;
     letter-spacing: -0.062rem;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1280px;
 }
 
 /* 폰트 설정 */
@@ -53,6 +56,10 @@ body {
 .english {
     font-family: 'Jockey One', sans-serif;
     letter-spacing: 0.15rem;
+}
+
+.title {
+   font-size: 5rem;
 }
 
 .caption {

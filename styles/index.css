@@ -1,11 +1,13 @@
 @import "./common.css";
 
+/* header - 인트로 */
 header {
   position: relative;
   color: white;
   background-image: url("/images/index/stars.png");
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 6rem;
 }
 
 header .text-area {
@@ -83,4 +85,15 @@ header .illust-dog {
     left: 4rem;
     transform: rotate(5deg);
   }
+}
+
+/* main - 교육, 경력 */
+main {
+  background-color: #e5de2e;
+  border-radius: 50%;
+  height: 70rem;
+}
+
+main .title {
+  font-size: 4rem;
 }
