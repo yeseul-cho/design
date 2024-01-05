@@ -3,6 +3,9 @@
 header {
   position: relative;
   color: white;
+  background-image: url("/images/index/stars.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header .text-area {
@@ -35,8 +38,8 @@ header .text-area .description p {
 
 header .illust-human {
   position: absolute;
-  top: -5rem;
-  right: 0rem;
+  top: -8rem;
+  right: 3rem;
   background-image: url("/images/index/astronaut.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -52,8 +55,9 @@ header .illust-human {
 
 @keyframes illust-human {
   50% {
-    top: -3rem;
-    right: 6rem;
+    top: -6rem;
+    right: 5rem;
+    transform: rotate(-5deg);
   }
 }
 
