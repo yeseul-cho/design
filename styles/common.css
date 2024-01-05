@@ -9,10 +9,6 @@ a {
     text-decoration: none;
 }
 
-a:visited {
-    color: white;
-}
-
 li {
     list-style: none;
 }
@@ -26,7 +22,7 @@ body {
     background-color: rgba(1,0,26, 1);
     font-family:  'NanumSquareNeo';
     font-weight: 300;
-    letter-spacing: -0.062rem;
+    letter-spacing: -0.04rem;
 }
 
 .wrapper {
@@ -54,8 +50,8 @@ body {
 }
 
 .english {
-    font-family: 'Jockey One', sans-serif;
-    letter-spacing: 0.15rem;
+    font-family: 'Russo One', sans-serif;
+    letter-spacing: 0;
 }
 
 .title {
@@ -64,8 +60,7 @@ body {
 
 .caption {
     font-size: 0.75rem;
-    letter-spacing: 0;
-    opacity: 0.5;
+    letter-spacing: -0.01rem;
 }
 
 
@@ -81,8 +76,13 @@ nav {
     display: flex;
     align-items: center;
     width: 100%;
+    min-width: 1280px;
     height: 5rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
+}
+
+.navigation a {
+    letter-spacing: 0.1rem;
 }
 
 .navigation ul {
