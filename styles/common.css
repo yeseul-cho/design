@@ -29,7 +29,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 1280px;
+    min-width: 1280px;
 }
 
 /* 폰트 설정 */
