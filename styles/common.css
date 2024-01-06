@@ -29,7 +29,6 @@ body {
   font-family: "NanumSquareNeo";
   font-weight: 300;
   letter-spacing: -0.04rem;
-  width: 100vw;
 }
 
 .wrapper {
@@ -37,18 +36,23 @@ body {
   flex-direction: column;
   justify-content: center;
   min-width: 1280px;
-  width: 100%;
 }
 
 @media (max-width: 1279px) {
+  body {
+    width: 100%;
+  }
   .wrapper {
-    min-width: 768px;
+    min-width: 100%;
   }
 }
 
 @media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
   .wrapper {
-    min-width: 360px;
+    min-width: 100%;
   }
 }
 
@@ -98,7 +102,7 @@ nav {
   align-items: center;
   font-size: 1rem;
   letter-spacing: 0.1rem;
-  padding: 1.25rem 2.5rem;
+  padding: 1.5rem 2.5rem;
 }
 
 .navigation a {
@@ -156,6 +160,8 @@ nav {
   }
 
   .navigation .hamburger-menu {
+    top: 4.5rem;
+    padding-bottom: 2rem;
     margin-right: auto;
   }
 
