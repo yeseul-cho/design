@@ -4,7 +4,7 @@
 header {
   position: relative;
   color: white;
-  background-image: url("/design/images/index/stars.png");
+  background-image: url("../images/index/stars.png");
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 6rem;
@@ -46,7 +46,7 @@ header .illust-human {
   position: absolute;
   top: -8rem;
   right: 3rem;
-  background-image: url("/design/images/index/astronaut.png");
+  background-image: url("../images/index/astronaut.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 750px;
@@ -71,7 +71,7 @@ header .illust-dog {
   position: absolute;
   top: 3rem;
   left: 2rem;
-  background-image: url("/design/images/index/astronaut-dog.png");
+  background-image: url("../images/index/astronaut-dog.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 300px;
