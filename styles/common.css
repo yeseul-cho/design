@@ -13,6 +13,12 @@ li {
   list-style: none;
 }
 
+button {
+  background: inherit;
+  border: none;
+  box-shadow: none;
+}
+
 html {
   display: flex;
   justify-content: center;
@@ -23,6 +29,7 @@ body {
   font-family: "NanumSquareNeo";
   font-weight: 300;
   letter-spacing: -0.04rem;
+  width: 100vw;
 }
 
 .wrapper {
@@ -30,19 +37,20 @@ body {
   flex-direction: column;
   justify-content: center;
   min-width: 1280px;
+  width: 100%;
 }
 
-@media (max-width: 1279px){
-    .wrapper {
-      min-width: 768px;
-    }
+@media (max-width: 1279px) {
+  .wrapper {
+    min-width: 768px;
   }
-  
-  @media (max-width:600px) {
-    .wrapper {
-      min-width: 360px;
-    }
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    min-width: 360px;
   }
+}
 
 /* 폰트 설정 */
 .yellow {
@@ -88,28 +96,27 @@ nav {
 .navigation {
   display: flex;
   align-items: center;
-  min-width: 1280px;
-  height: 5rem;
   font-size: 1rem;
-}
-
-@media (max-width: 1279px){
-  .navigation {
-    min-width: 768px;
-  }
-}
-
-@media (max-width:600px) {
-  .navigation {
-    min-width: 360px;
-  }
+  letter-spacing: 0.1rem;
+  padding: 1.25rem 2.5rem;
 }
 
 .navigation a {
   letter-spacing: 0.1rem;
 }
 
-.navigation ul {
+.navigation .hamburger-btn,
+.navigation .close-btn,
+.navigation .hamburger-menu {
+  display: none;
+}
+
+.navigation .default-menu {
+  display: flex;
+  width: 100%;
+}
+
+.navigation .default-menu ul {
   display: flex;
   margin-left: auto;
 }
@@ -120,4 +127,48 @@ nav {
 
 .navigation ul li a:hover {
   color: #e5de2e;
+}
+
+@media (max-width: 1279px) {
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 1.25rem;
+  }
+
+  .navigation .logo {
+    display: none;
+  }
+
+  .navigation .default-menu {
+    display: none;
+  }
+
+  .navigation button img {
+    width: 2rem;
+  }
+
+  .navigation .hamburger-btn {
+    display: block;
+  }
+
+  .navigation .hamburger-menu {
+    margin-right: auto;
+  }
+
+  .navigation .hamburger-menu ul {
+    margin-top: 3rem;
+    font-size: 2.25rem;
+    font-family: "PyeongChangPeace", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .navigation .hamburger-menu ul li {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
 }
