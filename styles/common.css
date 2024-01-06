@@ -1,99 +1,123 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 html {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 body {
-    background-color: rgba(1,0,26, 1);
-    font-family:  'NanumSquareNeo';
-    font-weight: 300;
-    letter-spacing: -0.04rem;
+  background-color: rgba(1, 0, 26, 1);
+  font-family: "NanumSquareNeo";
+  font-weight: 300;
+  letter-spacing: -0.04rem;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-width: 1280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 1280px;
 }
+
+@media (max-width: 1279px){
+    .wrapper {
+      min-width: 768px;
+    }
+  }
+  
+  @media (max-width:600px) {
+    .wrapper {
+      min-width: 360px;
+    }
+  }
 
 /* 폰트 설정 */
 .yellow {
-    color: #E5DE2E;
+  color: #e5de2e;
 }
 
 .korean-emphasis-700 {
-    font-family: 'PyeongChangPeace', sans-serif;
-    font-weight: 700;
-    letter-spacing: 0;
+  font-family: "PyeongChangPeace", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
 }
 
 .korean-emphasis-300 {
-    font-family: 'PyeongChangPeace', sans-serif;
-    font-weight: 300;
-    letter-spacing: 0;
+  font-family: "PyeongChangPeace", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
 }
 
 .english {
-    font-family: 'Russo One', sans-serif;
-    letter-spacing: 0;
+  font-family: "Russo One", sans-serif;
+  letter-spacing: 0;
 }
 
 .title {
-   font-size: 5rem;
+  font-size: 5rem;
 }
 
 .caption {
-    font-size: 0.75rem;
-    letter-spacing: -0.01rem;
+  font-size: 0.75rem;
+  letter-spacing: -0.01rem;
 }
-
 
 /* 네비게이션 설정 */
 nav {
-    position: sticky;
-    top: 0;
-    background-color: rgba(1,0,26, 0.7);
-    z-index: 100;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(1, 0, 26, 0.7);
+  z-index: 100;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    min-width: 1280px;
-    height: 5rem;
-    font-size: 1rem;
+  display: flex;
+  align-items: center;
+  min-width: 1280px;
+  height: 5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 1279px){
+  .navigation {
+    min-width: 768px;
+  }
+}
+
+@media (max-width:600px) {
+  .navigation {
+    min-width: 360px;
+  }
 }
 
 .navigation a {
-    letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
 }
 
 .navigation ul {
-    display: flex;
-    margin-left: auto;
+  display: flex;
+  margin-left: auto;
 }
 
-.navigation ul li{
-    margin-left: 2.75rem;
+.navigation ul li {
+  margin-left: 2.75rem;
 }
 
 .navigation ul li a:hover {
-    color: #E5DE2E;
+  color: #e5de2e;
 }
