@@ -1,7 +1,7 @@
 @import "./common.css";
 
 html {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 /* header - 텍스트 */
@@ -309,16 +309,27 @@ header .illust-dog {
 
 /* main */
 main {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
   flex-wrap: wrap;
   height: 74rem;
-  border-radius: 50%;
   padding-bottom: 4rem;
   margin-bottom: 6rem;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   background-color: #e5de2e;
+  border-radius: 50%;
+  z-index: -100;
 }
 
 main .title-area {
@@ -330,6 +341,65 @@ main .title-area {
 
 main .title-area .title {
   font-size: 4rem;
+}
+
+@media (max-width: 1359px) {
+  main::before {
+    right: -20%;
+    left: -20%;
+  }
+}
+
+@media (max-width: 1279px) {
+  main {
+    height: 85rem;
+  }
+
+  main::before {
+    right: -35%;
+    left: -35%;
+  }
+  
+  main .title-area {
+    margin-bottom: 2rem;
+  }
+  
+  main .title-area .title {
+    font-size: 2.5rem;
+  }
+
+  main .title-area .subtitle {
+    font-size: 0.93rem;
+  }
+}
+
+@media (max-width: 890px) {
+  main::before {
+    right: -40%;
+    left: -40%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    height: 110rem;
+  }
+
+  main::before {
+    right: -90%;
+    left: -90%;
+  }
+  
+  main .title-area {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 420px) {
+  main::before {
+    right: -110%;
+    left: -110%;
+  }
 }
 
 /* cards */
@@ -353,13 +423,19 @@ main .title-area .title {
 }
 
 .cards-area .card .card-main img {
-  width: 7.5rem;
+  width: 50%;
   margin-bottom: 0.7rem;
 }
 
 .cards-area .card .card-main .card-title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+}
+
+.cards-area .card .card-main .description-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cards-area .card .card-main .card-description {
@@ -399,6 +475,102 @@ main .title-area .title {
 
 .cards-area .card:nth-child(2) {
   margin: 0 1rem;
+}
+
+@media (max-width: 890px) {
+  .cards-area {
+    margin-bottom: 3.375rem;
+  }
+
+  .cards-area .card {
+    flex : 1;
+  }
+  
+  .cards-area .card .card-main {
+    padding: 8% 10%;
+    border-radius: 0;
+  }
+  
+  .cards-area .card .card-main .card-title {
+    font-size: 1.25rem;
+  }
+  
+  .cards-area .card .card-main .card-description {
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
+  
+  .cards-area .card .card-skills {
+    border-radius: 0;
+    padding: 7% 0;
+    border-right: 1px solid rgba(1, 0, 26, 0.2);
+  }
+  
+  .cards-area .card .card-skills .skills-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .cards-area .card:nth-child(2) {
+    margin: 0;
+  }
+
+  .cards-area .card:nth-child(3) .card-skills{
+    border: 0;
+  }
+}
+
+@media (max-width: 654px) {
+  .cards-area {
+    flex-direction: column;
+    margin-bottom: 3.375rem;
+  }
+
+  .cards-area .card {
+    width: 100%;
+  }
+  
+  .cards-area .card .card-main {
+    display: flex;
+    flex-direction: row;
+    padding: 6% 6%;
+    border-radius: 0;
+  }
+
+  .cards-area .card .card-main img {
+    width: 30%;
+    margin-bottom: 0;
+    margin-right: 0.875rem;
+  }
+  
+  .cards-area .card .card-main .card-title {
+    font-size: 1.25rem;
+    align-self: flex-start;
+  }
+
+  .cards-area .card .card-main .description-area {
+    align-items: flex-start;
+  }
+  
+  .cards-area .card .card-main .card-description {
+    line-height: 1.5;
+    font-size: 0.8rem;
+  }
+  
+  .cards-area .card .card-skills {
+    flex-direction: row;
+    border-radius: 0;
+    padding: 2%;
+  }
+  
+  .cards-area .card .card-skills .skills-title {
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    margin-right: 0.5rem;
+  }
+
+  .cards-area .card:nth-child(2) {
+    margin: 0;
+  }
 }
 
 /* resume */
