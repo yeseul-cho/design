@@ -11,8 +11,11 @@ header {
 }
 
 header .text-area {
-  margin: 24rem 0 0 10rem;
+  margin: 24rem 0 0 0rem;
+  padding: 2rem;
   z-index: 1;
+  background-color: rgba(1, 0, 26, 1);
+  width: fit-content;
 }
 
 header .text-area .sub-title {
