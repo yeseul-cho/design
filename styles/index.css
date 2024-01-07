@@ -164,7 +164,7 @@ header .illust-dog {
   @keyframes illust-human {
     50% {
       top: -5rem;
-      right: 4rem;
+      right: 2rem;
       transform: rotate(-5deg);
     }
   }
@@ -258,7 +258,7 @@ header .illust-dog {
     overflow: hidden;
   }
   header .illust-human {
-    top: -3rem;
+    top: -0.5rem;
     right: -14rem;
     width: 30rem;
     height: 30rem;
@@ -266,9 +266,9 @@ header .illust-dog {
   }
   @keyframes illust-human {
     50% {
-      top: -1rem;
-      right: -15.5rem;
-      transform: rotate(-10deg);
+      top: 0rem;
+      right: -15rem;
+      transform: rotate(-5deg);
     }
   }
   header .illust-dog {
@@ -277,7 +277,7 @@ header .illust-dog {
     width: 11rem;
     height: 11rem;
     transform: rotate(-15deg);
-    animation-duration: 6s;
+    animation-duration: 10s;
   }
   @keyframes illust-dog {
     50% {
