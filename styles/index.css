@@ -397,8 +397,8 @@ main .title-area .title {
 
 @media (max-width: 420px) {
   main::before {
-    right: -110%;
-    left: -110%;
+    right: -140%;
+    left: -140%;
   }
 }
 
