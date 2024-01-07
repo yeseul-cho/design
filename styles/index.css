@@ -1,6 +1,6 @@
 @import "./common.css";
 
-html {
+body, html {
   overflow-x: hidden;
 }
 
