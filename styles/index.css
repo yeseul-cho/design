@@ -1,13 +1,26 @@
 @import "./common.css";
 
+html {
+  overflow: hidden;
+}
+
 /* header - 텍스트 */
 header {
   position: relative;
   color: white;
+  padding-bottom: 6rem;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: -5rem;
+  right: -18rem;
+  left: -18rem;
+  z-index: -100;
   background-image: url("../images/index/stars.png");
   background-size: cover;
-  background-position: top;
-  padding-bottom: 6rem;
 }
 
 header .text-area {
