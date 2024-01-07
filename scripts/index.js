@@ -1,8 +1,6 @@
 "use strict";
 
 $(document).ready(function () {
-  $("nav").load("/design/components/nav.html");
-
   $("nav").on("click", ".hamburger-btn", function () {
     $(".hamburger-btn").hide();
     $(".close-btn").show();
