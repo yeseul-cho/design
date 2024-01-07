@@ -430,6 +430,7 @@ main .title-area .title {
 .cards-area .card .card-main .card-title {
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 .cards-area .card .card-main .description-area {
@@ -526,6 +527,7 @@ main .title-area .title {
   }
 
   .cards-area .card {
+    position: relative;
     width: 100%;
   }
   
@@ -537,7 +539,7 @@ main .title-area .title {
   }
 
   .cards-area .card .card-main img {
-    width: 30%;
+    width: 20%;
     margin-bottom: 0;
     margin-right: 0.875rem;
   }
@@ -545,6 +547,8 @@ main .title-area .title {
   .cards-area .card .card-main .card-title {
     font-size: 1.25rem;
     align-self: flex-start;
+    margin-bottom: 0.25rem;
+    text-align: left;
   }
 
   .cards-area .card .card-main .description-area {
@@ -553,19 +557,25 @@ main .title-area .title {
   
   .cards-area .card .card-main .card-description {
     line-height: 1.5;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
   
   .cards-area .card .card-skills {
     flex-direction: row;
     border-radius: 0;
-    padding: 2%;
+    padding: 2.5% 0;
+    border-right: none;
+    padding-left: 6%;
   }
   
   .cards-area .card .card-skills .skills-title {
-    font-size: 0.75rem;
+    font-size: 0.6875rem;
     margin-bottom: 0;
     margin-right: 0.5rem;
+  }
+
+  .cards-area .card .card-skills .caption {
+    font-size: 0.6875rem;
   }
 
   .cards-area .card:nth-child(2) {
