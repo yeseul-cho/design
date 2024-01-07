@@ -1,13 +1,13 @@
 @import "./common.css";
 
-/* header - 인트로 */
+/* header - 텍스트 */
 header {
   position: relative;
   color: white;
-  background-image: url("../images/index/stars.png");
+  /* background-image: url("../images/index/stars.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  margin-bottom: 6rem;
+  background-repeat: no-repeat; */
+  padding-bottom: 6rem;
 }
 
 header .text-area {
@@ -42,6 +42,66 @@ header .text-area .description p {
   line-height: 1.6;
 }
 
+@media (max-width: 1279px) {
+  header {
+    padding-bottom: 5rem;
+  }
+  header .text-area {
+    margin: 19rem 0 0 5rem;
+    z-index: 1;
+  }
+  header .text-area .sub-title {
+    font-size: 1.45rem;
+  }
+  header .text-area .title {
+    display: flex;
+    align-items: center;
+  }
+  header .text-area .title h1 {
+    font-size: 4.25rem;
+    line-height: 1.2;
+    margin-right: 0.25rem;
+  }
+  header .text-area .title svg {
+    width: 3.25rem;
+    height: 3.25rem;
+  }
+  header .text-area .description {
+    margin: 0.8rem 0;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding-bottom: 6.5rem;
+  }
+  header .text-area {
+    margin: 20rem 0 0 1.5rem;
+    z-index: 1;
+  }
+  header .text-area .sub-title {
+    font-size: 1.45rem;
+  }
+  header .text-area .title {
+    display: flex;
+    align-items: center;
+  }
+  header .text-area .title h1 {
+    font-size: 3.75rem;
+    line-height: 1.2;
+    margin-right: 0.25rem;
+  }
+  header .text-area .title svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  header .text-area .description {
+    margin: 0.8rem 0;
+    font-size: 0.875rem;
+  }
+}
+
+/* header - 일러스트 */
 header .illust-human {
   position: absolute;
   top: -8rem;
@@ -49,8 +109,8 @@ header .illust-human {
   background-image: url("../images/index/astronaut.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 750px;
-  height: 750px;
+  width: 46.8rem;
+  height: 46.8rem;
   z-index: 0;
   animation-name: illust-human;
   animation-duration: 10s;
@@ -74,8 +134,8 @@ header .illust-dog {
   background-image: url("../images/index/astronaut-dog.png");
   background-size: contain;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   animation-name: illust-dog;
   animation-duration: 7s;
   animation-iteration-count: infinite;
@@ -90,6 +150,144 @@ header .illust-dog {
     transform: rotate(5deg);
   }
 }
+
+@media (max-width: 1279px) {
+  header {
+    overflow: hidden;
+  }
+  header .illust-human {
+    top: -4rem;
+    right: 0;
+    width: 40rem;
+    height: 40rem;
+  }
+  @keyframes illust-human {
+    50% {
+      top: -5rem;
+      right: 4rem;
+      transform: rotate(-5deg);
+    }
+  }
+  header .illust-dog {
+    top: 2rem;
+    left: 1rem;
+    width: 16rem;
+    height: 16rem;
+    transform: rotate(-10deg);
+    animation-duration: 7s;
+  }
+  @keyframes illust-dog {
+    50% {
+      top: 4rem;
+      left: 4rem;
+      transform: rotate(5deg);
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  header {
+    overflow: hidden;
+  }
+  header .illust-human {
+    top: -5rem;;
+    right: -10rem;
+    width: 36rem;
+    height: 36rem;
+  }
+  @keyframes illust-human {
+    50% {
+      top: -6rem;
+      right: -5rem;
+      transform: rotate(-5deg);
+    }
+  }
+  header .illust-dog {
+    top: 5rem;
+    left: 2rem;
+    width: 14rem;
+    height: 14rem;
+    transform: rotate(-10deg);
+    animation-duration: 6s;
+  }
+  @keyframes illust-dog {
+    50% {
+      top: 6rem;
+      left: 3rem;
+      transform: rotate(5deg);
+    }
+  }
+}
+
+@media (max-width: 799px) {
+  header {
+    overflow: hidden;
+  }
+  header .illust-human {
+    top: -5rem;
+    right: -12rem;
+    width: 34rem;
+    height: 34rem;
+  }
+  @keyframes illust-human {
+    50% {
+      top: -4rem;
+      right: -11.5rem;
+      transform: rotate(-5deg);
+    }
+  }
+  header .illust-dog {
+    top: 5rem;
+    left: 0;
+    width: 12.5rem;
+    height: 12.5rem;
+    transform: rotate(-5deg);
+    animation-duration: 6s;
+  }
+  @keyframes illust-dog {
+    50% {
+      top: 6.5rem;
+      left: 1.5rem;
+      transform: rotate(15deg);
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    overflow: hidden;
+  }
+  header .illust-human {
+    top: -3rem;
+    right: -14rem;
+    width: 30rem;
+    height: 30rem;
+    animation-duration: 8s;
+  }
+  @keyframes illust-human {
+    50% {
+      top: -1rem;
+      right: -15.5rem;
+      transform: rotate(-10deg);
+    }
+  }
+  header .illust-dog {
+    top: -1rem;
+    left: 1.5rem;
+    width: 11rem;
+    height: 11rem;
+    transform: rotate(-15deg);
+    animation-duration: 6s;
+  }
+  @keyframes illust-dog {
+    50% {
+      top: 1rem;
+      left: -2rem;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
 
 /* main */
 main {
