@@ -1,1 +1,95 @@
 @import "./common.css";
+
+html {
+  height: 100vh;
+}
+
+.wrapper {
+  align-items: center;
+  color: white;
+  height: 100%;
+}
+
+h1 {
+  font-size: 5.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-area {
+  display: flex;
+  align-items: center;
+}
+
+.profile-area .avatar {
+  margin-right: 1.5rem;
+  width: 10.75rem;
+}
+
+.profile-area .text-area h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.profile-area .text-area .description-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-area .text-area .titles {
+  font-weight: 800;
+  margin-right: 0.8rem;
+}
+
+.profile-area .text-area .titles p:nth-child(1),
+.profile-area .text-area .descriptions p:nth-child(1) {
+  margin-bottom: 0.5rem;
+}
+
+.profile-area .text-area .descriptions a:nth-child(2) {
+  border-bottom: 1px white solid;
+}
+
+.profile-area .text-area .descriptions a:nth-child(2):hover {
+  color: #e5de2e;
+  border-bottom: 1px #e5de2e solid;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 3.5rem !important;
+    margin-bottom: 1rem;
+  }
+
+  .profile-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-area .avatar {
+    margin-right: 0;
+    width: 6.5rem;
+  }
+
+  .profile-area .text-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-area .text-area h2 {
+    font-size: 2rem;
+    margin: 0.6rem 0;
+  }
+
+  .profile-area .text-area .description-area {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .profile-area .text-area .description-area .titles {
+      display: flex;
+      flex-direction: column;
+    align-items: flex-end;
+  }
+}
