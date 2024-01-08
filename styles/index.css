@@ -386,11 +386,23 @@ main .title-area .title {
 @media (max-width: 700px) {
   main {
     flex-wrap: nowrap;
-    height: 90rem;
+    height: 76rem;
   }
   main::before {
     right: -60%;
     left: -60%;
+  }
+}
+
+@media (max-width: 654px) {
+  main {
+    height: 90rem;
+  }
+}
+
+@media (max-width: 645px) {
+  main {
+    height: 106rem;
   }
 }
 
