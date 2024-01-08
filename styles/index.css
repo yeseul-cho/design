@@ -352,21 +352,10 @@ main .title-area .title {
   font-size: 4rem;
 }
 
-@media (max-width: 1359px) {
-  main {
-    padding-bottom: 2rem;
-  }
-
-  main::before {
-    right: -20%;
-    left: -20%;
-  }
-}
-
 @media (max-width: 1279px) {
   main {
-    height: 68rem;
-    flex-wrap: nowrap;
+    height: 78rem;
+    padding-top: 2rem;
   }
 
   main::before {
@@ -379,7 +368,7 @@ main .title-area .title {
   }
   
   main .title-area .title {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   main .title-area .subtitle {
@@ -397,22 +386,22 @@ main .title-area .title {
 @media (max-width: 700px) {
   main {
     flex-wrap: nowrap;
-    height: 110rem;
+    height: 90rem;
   }
   main::before {
-    right: -80%;
-    left: -80%;
+    right: -60%;
+    left: -60%;
   }
 }
 
 @media (max-width: 600px) {
   main {
-    height: 100rem;
+    height: 108rem;
   }
 
   main::before {
-    right: -110%;
-    left: -110%;
+    right: -100%;
+    left: -100%;
   }
   
   main .title-area {
@@ -694,7 +683,7 @@ main .title-area .title {
   letter-spacing: -0.03rem;
 }
 
-@media (max-width: 1141px) {
+@media (max-width: 1279px) {
   .resume-area {
     padding: 0 1.5rem;
     display: flex;
