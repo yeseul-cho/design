@@ -4,24 +4,32 @@ body, html {
   overflow-x: hidden;
 }
 
+@media (min-width: 1360px) {
+  body, html {
+    overflow-x: visible;
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+
+.wrapper::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/index/stars.png");
+  background-size: contain;
+  top: 0;
+  bottom: 0;
+  left: -50%;
+  right: -50%;
+}
+
 /* header - 텍스트 */
 header {
   position: relative;
   color: white;
   padding-bottom: 6rem;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: -5rem;
-  left: -45rem;
-  right: -45rem; 
-  z-index: -100;
-  background-image: url("../images/index/stars.png");
-  background-size: contain;
-  background-repeat: repeat;
 }
 
 header .text-area {
