@@ -64,9 +64,45 @@ html {
   flex-wrap: wrap;
 }
 
-.image-area.cardnews img, .image-area.web-desc img {
-  width: 19.25rem;
+.image-area .image {
+  position: relative;
+  cursor: pointer;
   margin: 0.5rem;
+}
+
+.image-area.cardnews .image img, .image-area.web-desc .image img {
+  width: 19.25rem;
+  
+}
+
+.image-area.marketing .image img {
+  width: 40rem;
+}
+
+.image-area .image .image-over {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(1, 0, 26, 0.7);
+  z-index: 10;
+  display: none;
+}
+
+.image-area .image:hover .image-over {
+  display: flex;
+}
+
+.image-area .image .image-over button {
+  padding: 1rem 1.5rem;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  font-size: 1rem;
+  border-radius: 50%;
 }
 
 @media (max-width: 1279px) {
@@ -106,10 +142,6 @@ html {
 
   .box-area .box-text span {
     margin-right: 0.5rem;
-  }
-
-  .image-area img {
-    cursor: pointer;
   }
 
   .image-area.cardnews img, .image-area.web-desc img {
