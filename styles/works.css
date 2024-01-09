@@ -1,1 +1,119 @@
 @import "./common.css";
+
+html {
+  height: 100vh;
+}
+
+.wrapper {
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10rem;
+  color: white;
+  height: 100%;
+}
+
+.works-area .work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 7.5rem;
+}
+
+.title-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.8rem;
+}
+
+.title-area h1 {
+  font-size: 5.5rem;
+}
+
+.works-area .work .work-title {
+  font-size: 2rem;
+}
+
+.descriptions-area {
+  text-align: center;
+  line-height: 1.8;
+  margin: 1rem 0;
+}
+
+.box-area {
+  max-width: 22.25rem;
+  min-width: 16.5rem;
+  border: 1px solid white;
+  border-radius: 1.5rem;
+  padding: 1rem 2rem;
+  font-size: 0.75rem;
+  line-height: 1.8;
+  letter-spacing: 0.03rem;
+  margin-bottom: 2rem;
+}
+
+.box-area .box-text span {
+  font-weight: 800;
+  margin-right: 1rem;
+}
+
+.image-area {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-area.cardnews img, .image-area.web-desc img {
+  width: 19.25rem;
+  margin: 0.5rem;
+}
+
+@media (max-width: 1279px) {
+  body {
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title-area {
+    margin-bottom: 1.5rem;
+  }
+
+  .title-area h1 {
+    font-size: 3.75rem;
+  }
+
+  .works-area .work .work-title {
+    font-size: 1.75rem;
+    line-height: 0.95;
+  }
+
+  .descriptions-area {
+    font-size: 0.9375rem;
+    line-height: 1.7;
+    margin: 0.9rem 0;
+  }
+
+  .box-area {
+    border-radius: 1.2rem;
+    padding: 0.75rem 1.2rem;
+    font-size: 0.75rem;
+    line-height: 1.7;
+    letter-spacing: 0.03rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .box-area .box-text span {
+    margin-right: 0.5rem;
+  }
+
+  .image-area img {
+    cursor: pointer;
+  }
+
+  .image-area.cardnews img, .image-area.web-desc img {
+    width: 9.5rem;
+    margin: 0.25rem;
+  }
+}
