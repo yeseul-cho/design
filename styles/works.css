@@ -34,10 +34,29 @@
   font-size: 2rem;
 }
 
+.work-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
 .descriptions-area {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   line-height: 1.8;
   margin: 1rem 0;
+}
+
+.descriptions-area .description-title {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  font-family: "PyeongChangPeace", sans-serif;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 1.2;
+  border-bottom: solid 1px white;
 }
 
 .box-area {
@@ -76,6 +95,11 @@
 
 .image-area.marketing .image img {
   width: 38rem;
+}
+
+.image-area.service .image img {
+  width: 100%;
+  max-width: 80rem;
 }
 
 .image-area .image .image-over {
@@ -126,13 +150,13 @@
     font-size: 3.75rem;
   }
 
-  .works-area {
-    padding: 1.5rem;
-    width: 350px;
-  }
-
   .works-area .work .work-title {
     font-size: 1.75rem;
+    line-height: 0.95;
+  }
+
+  .works-area .work .work-title.small {
+    font-size: 1.55rem;
     line-height: 0.95;
   }
 
