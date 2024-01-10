@@ -45,8 +45,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 1.8;
+  line-height: 1.6;
   margin: 1rem 0;
+  font-size: 0.95rem;
 }
 
 .descriptions-area .description-title {
@@ -67,7 +68,7 @@
   padding: 1rem 2rem;
   font-size: 0.75rem;
   line-height: 1.8;
-  letter-spacing: 0.02rem;
+  letter-spacing: -0.01rem;
   margin-bottom: 2rem;
 }
 
@@ -131,6 +132,14 @@
   border-radius: 50%;
 }
 
+.image-area .image .image-over button a {
+  color: black;
+}
+
+.image-area.service .image .image-over button:nth-child(1) {
+  margin-right: 1rem;
+}
+
 @media (max-width: 1279px) {
   body {
     padding: 0 0.5rem;
@@ -166,6 +175,11 @@
     margin: 0.9rem 0;
   }
 
+  .descriptions-area .description-title {
+    font-size: 1rem;
+    margin: 0.75rem 0;
+  }
+
   .box-area {
     border-radius: 1.2rem;
     padding: 0.75rem 1.2rem;
@@ -192,5 +206,17 @@
 
   .image-area.marketing .image img {
     width: 100%;
+  }
+  
+  .image-area .image .image-over button {
+    padding: 0.8rem 1.25rem;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    font-size: 0.8rem;
+    font-family: "PyeongChangPeace", sans-serif;
+    font-weight: 300;
+    letter-spacing: 0;
+    border-radius: 50%;
   }
 }
