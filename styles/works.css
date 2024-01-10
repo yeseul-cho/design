@@ -253,12 +253,7 @@
   overflow-y : scroll;
 }
 
-.modal.web-desc .image-area img {
-  grid-template-columns: 1fr;
-  max-width: 19rem;
-}
-
-.modal.marketing .image-area img {
+.modal.web-desc .image-area img, .modal.marketing .image-area img {
   grid-template-columns: 1fr;
   max-width: 24rem;
 }

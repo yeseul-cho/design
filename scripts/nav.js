@@ -15,7 +15,4 @@ $(document).ready(function () {
     $(".navigation").css("background-color", "rgba(1, 0, 26, 0.7)");
   });
 
-  $(document).height()
-  $(document).width()
-
 });
