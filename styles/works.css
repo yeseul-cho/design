@@ -224,6 +224,7 @@
 
 /* modal */
 .modal {
+  display: none;
   position: fixed;
   top: 5rem;
   bottom: 5rem;
@@ -246,25 +247,41 @@
 }
 
 .modal .image-area {
+  display: grid;
   padding: 1rem 2rem 2rem 2rem;
   height: 100%;
   overflow-y : scroll;
 }
 
+.modal.web-desc .image-area img {
+  grid-template-columns: 1fr;
+  max-width: 19rem;
+}
+
+.modal.marketing .image-area img {
+  grid-template-columns: 1fr;
+  max-width: 24rem;
+}
+
 .modal.cardnews .image-area {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(9rem, 19rem));
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
 .modal .image-area::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.7rem;
 }
 
 .modal .image-area::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.5);
   border-radius: 0.5rem;
   background-clip: padding-box;
+}
+
+.modal .image-area::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 0.25rem solid transparent;
+  border-radius: 0.5rem;
 }
 
 .modal.cardnews .image-area img {
@@ -275,9 +292,53 @@
 .modal-background {
   position: fixed;
   top: 0;
-  display: block;
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 9;
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .modal {
+    top: 5rem;
+    bottom: 5rem;
+    left: 2rem;
+    right: 2rem;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    z-index: 12;
+    overflow : hidden;
+    height: 85%;
+    padding-bottom: 5rem;
+  }
+
+  .modal .modal-header img {
+    width: 1.5rem;
+  }
+
+  .modal .image-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .modal .image-area img {
+    width: 100%;
+  }
+
+  .modal.cardnews .image-area {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .modal.cardnews .image-area img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .modal .image-area::-webkit-scrollbar {
+    width: 0.5rem;
+  }
 }
