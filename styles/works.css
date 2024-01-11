@@ -207,7 +207,7 @@
   }
 
   .image-area.cardnews img, .image-area.web-desc img {
-    width: 9rem;
+    width: 11rem;
   }
 
   .image-area.marketing .image img {
@@ -235,7 +235,7 @@
   bottom: 5rem;
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 255, 255, 0.3);
-  z-index: 10;
+  z-index: 12;
   overflow : hidden;
   height: 85%;
   padding-bottom: 5rem;
@@ -295,7 +295,7 @@
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 9;
+  z-index: 11;
   display: none;
 }
 

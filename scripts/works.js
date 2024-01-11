@@ -3,7 +3,7 @@
 $(document).ready(function () {
   $(".image-over").click(function () {
     const category = $(this).parent().parent().prop("className").split(" ")[1];
-    const title = $(this).siblings("img").prop("src").split("/")[6];
+    const title = $(this).siblings("img").prop("src").split("/").slice(-2)[0];
     const numberOfImages = Number(
       $(this).siblings("img").prop("className").split("-")[1]
     );
