@@ -94,7 +94,11 @@
   margin: 0.5rem;
 }
 
-.image-area.cardnews .image img, .image-area.web-desc .image img {
+.image-area.service .image:nth-child(1) {
+  cursor:default;
+}
+
+.image-area.cardnews .image img, .image-area.web-desc .image img, .image-area.web-desc .image img {
   max-width: 19rem;
   
 }
@@ -158,7 +162,7 @@
 
 @media (max-width: 600px) {
   .title-area {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   .title-area h1 {
@@ -206,7 +210,7 @@
     margin: 0.1rem 0;
   }
 
-  .image-area.cardnews img, .image-area.web-desc img {
+  .image-area.cardnews img, .image-area.web-desc, .image-area.service img {
     width: 11rem;
   }
 
@@ -261,6 +265,11 @@
 .modal.web-desc .image-area img, .modal.marketing .image-area img {
   grid-template-columns: 1fr;
   max-width: 24rem;
+}
+
+.modal.service .image-area img {
+  grid-template-columns: 1fr;
+  max-width: 42rem;
 }
 
 .modal.cardnews .image-area {
