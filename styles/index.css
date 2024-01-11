@@ -688,11 +688,13 @@ main .title-area .title {
   font-size: 0.8rem;
   letter-spacing: -0.05rem;
   line-height: 1.8;
+  font-weight: 400;
 }
 
 .resume-area .experiences .experience .texts .sub.description {
   font-size: 0.75rem;
   letter-spacing: -0.03rem;
+  font-weight: 300;
 }
 
 @media (max-width: 1279px) {
