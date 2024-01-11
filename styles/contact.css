@@ -27,7 +27,7 @@ h1 {
 
 .profile-area .text-area h2 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
 }
 
 .profile-area .text-area .description-area {
@@ -79,7 +79,7 @@ h1 {
 
   .profile-area .text-area h2 {
     font-size: 2rem;
-    margin: 0.6rem 0;
+    margin: 0.25rem 0;
   }
 
   .profile-area .text-area .description-area {
