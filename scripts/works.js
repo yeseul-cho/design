@@ -13,6 +13,11 @@ $(document).ready(function () {
       $(".modal .image-area").append(`<img src="${imageSrc}/${i}.jpg">`);
     }
 
+    if (category === "cardnews" && numberOfImages === 1) {
+      $(".modal .image-area").parent().addClass('one');
+      console.log(1)
+    }
+
     $(".modal").addClass(category);
     $(".modal").show();
     $(".modal-background").show();

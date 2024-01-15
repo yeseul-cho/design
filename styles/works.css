@@ -95,12 +95,13 @@
 }
 
 .image-area.service .image:nth-child(1) {
-  cursor:default;
+  cursor: default;
 }
 
-.image-area.cardnews .image img, .image-area.web-desc .image img, .image-area.web-desc .image img {
+.image-area.cardnews .image img,
+.image-area.web-desc .image img,
+.image-area.web-desc .image img {
   max-width: 19rem;
-  
 }
 
 .image-area.marketing .image img {
@@ -154,7 +155,7 @@
   body {
     padding: 0 0.5rem;
   }
-  
+
   .works-area {
     width: 100%;
   }
@@ -210,14 +211,16 @@
     margin: 0.1rem 0;
   }
 
-  .image-area.cardnews img, .image-area.web-desc, .image-area.service img {
+  .image-area.cardnews img,
+  .image-area.web-desc,
+  .image-area.service img {
     width: 11rem;
   }
 
   .image-area.marketing .image img {
     width: 100%;
   }
-  
+
   .image-area .image .image-over button {
     padding: 0.8rem 1.25rem;
     color: black;
@@ -240,7 +243,7 @@
   background-color: rgb(0, 0, 0);
   border: 1px solid rgb(255, 255, 255, 0.3);
   z-index: 12;
-  overflow : hidden;
+  overflow: hidden;
   height: 85%;
   padding-bottom: 5rem;
 }
@@ -259,10 +262,20 @@
   display: grid;
   padding: 1rem 2rem 2rem 2rem;
   height: 100%;
-  overflow-y : scroll;
+  overflow-y: scroll;
 }
 
-.modal.web-desc .image-area img, .modal.marketing .image-area img {
+.modal.cardnews .image-area {
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.modal.cardnews.one .image-area {
+  grid-template-columns: 1fr;
+}
+
+.modal.web-desc .image-area img,
+.modal.marketing .image-area img {
   grid-template-columns: 1fr;
   max-width: 24rem;
 }
@@ -270,11 +283,6 @@
 .modal.service .image-area img {
   grid-template-columns: 1fr;
   max-width: 42rem;
-}
-
-.modal.cardnews .image-area {
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
 }
 
 .modal .image-area::-webkit-scrollbar {
@@ -317,7 +325,7 @@
     background-color: rgb(0, 0, 0);
     border: 1px solid rgb(255, 255, 255, 0.3);
     z-index: 12;
-    overflow : hidden;
+    overflow: hidden;
     height: 85%;
     padding-bottom: 5rem;
   }
@@ -345,6 +353,10 @@
   .modal.cardnews .image-area img {
     width: 100%;
     height: 100%;
+  }
+
+  .modal.cardnews.one .image-area img {
+    height: auto;
   }
 
   .modal .image-area::-webkit-scrollbar {
